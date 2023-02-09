@@ -450,7 +450,7 @@ strong{
 
 .footer-container{
   display: flex;
-  margin: 0 auto;
+  background-color: #121212;
   justify-content: center;
   gap: 50px;
   font-family: "Lato", sans-serif;
@@ -491,10 +491,150 @@ strong{
 
 .row-divider{
   background-color: #484848;
-  width: 1000px;
+  width: 60%;
   height: 1px;
   position: absolute;
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* Responsive */
+
+@media (max-width: 1300px) {
+  .photos-grid{
+    max-width: 900px; 
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .photos-grid .img-small{
+    max-width: 390px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .seaSparks{
+    margin-bottom: 300px;
+  }
+
+  .seaSparks .title{
+    border-right: none;
+    border-bottom: 2px solid var(--color-text-blue);
+    padding: 40px 0;
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .seaSparks .paragraph{
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .associate-container{
+    grid-template-columns:  1fr 1fr;
+    justify-content: center;
+
+  }
+
+  .callToAction-Associate{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    justify-self: center;
+    text-align: center;
+  }
+  .callToAction-Associate h1{
+    text-align: start;
+  }
+}
+
+@media (max-width: 768px){
+  .photos-grid .img-big{
+    display: none;
+  }
+
+  .associate-container{
+    grid-template-columns: 1fr;
+    margin-bottom: 15vh;
+  }
+  .callToAction-Associate{
+    grid-column: 1/2;
+  }
+
+  .card:nth-of-type(2){
+    justify-self: center;
+  }
+
+  .card:nth-of-type(3){
+    justify-self: center;
+  }
+
+  .card:nth-of-type(4){
+    justify-self: center;
+  }
+
+  .card:nth-of-type(5){
+    justify-self: center;
+  }
+
+  .cases-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "cases cases cases cases"
+      "photo1 photo2 photo3 photo4";
+  }
+
+  .cases-container > div{
+    grid-area: cases;
+    padding-bottom: 5vh;
+  }
+
+  .footer-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-container .contact{
+    text-align: center;
+    width: 400px;
+  }
+
+  .footer-container .agency{
+    text-align: center;
+    width: 400px;
+  }
+
+  .footer-container > img{
+    width: 400px;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .seaSparks img:nth-of-type(1){
+    display: none;
+  }
+
+  .seaSparks img:nth-of-type(3){
+    top: 700px;
+    left: 0;
+  }
+
+  .gallery-container > span{
+    max-width: 280px;
+    font-size: 36px;
+  }
+
+  .photos-grid .img-small {
+    max-width: 290px;
+    height: auto;
+}
+
+  .faq-question{
+    font-size: 1rem;
+  }
+}
+
+
+
