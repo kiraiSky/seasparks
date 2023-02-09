@@ -297,7 +297,7 @@ strong{
   margin-top: 20px;
 }
 
-.card p, h2{
+.card p,.card h2{
   text-align: center;
 }
 
@@ -387,4 +387,54 @@ strong{
   z-index: -1;
   width: 190px;
   margin-top: 20vh;
+}
+
+/* Faq */
+
+.faq-bg{
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 140px;
+}
+
+.faq-bg .title{
+  color: var(--color-text-blue);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-accordion{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.faq-question{
+  display: flex;
+  padding: 20px 0;
+  gap: 20px;
+  color: var(--color-text-blue);
+  font-size: 2rem;
+  font-family: "Lato0" ,sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom:3px solid;;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(-90deg, #fff, #093cd7);
+}
+.faq-question img{
+  max-width: 24px;
+  filter: invert(19%) sepia(91%) saturate(2751%) hue-rotate(223deg) brightness(89%) contrast(114%)
+}
+
+.faq-anwser{
+  padding: 10px 20px;
+}
+
+.faq-anwser p{
+  font-size: 1rem;
+  font-family: "Lato";
+  font-weight: 300;
+  color: #000;
+
+  display: none;
 }
