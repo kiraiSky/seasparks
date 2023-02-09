@@ -2,6 +2,12 @@
 
 A project to train my HTML, CSS and JS skills. The theme is about cleaning the sea, an institution/educational website.
 
+## Website in action
+
+### Desktop
+
+![seasparksGif (2)](https://user-images.githubusercontent.com/84739839/217797704-095dffca-eaa5-49e9-936a-1c57d2e4e765.gif)
+
 ## Authors
 
 João Cunha  
