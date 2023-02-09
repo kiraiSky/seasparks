@@ -343,3 +343,48 @@ strong{
   top: 16.5px;
   right: 26px;
 }
+
+/* gallery */
+
+.gallery-container{
+  position: relative;
+  padding-top: 70px;
+}
+
+.gallery-container span{
+  font-family: "Gobold Hollow";
+  font-weight: 700;
+  font-size: 48px;
+  position: absolute;
+  z-index: -1;
+  max-width: 400px;
+  color: #0D0D0D;
+}
+
+.photos-grid{
+  padding-top: 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 0px;
+  justify-content: space-between;
+}
+
+.photos-grid .img-small{
+  max-width: 290px;
+  border-radius: 11px;
+  height: 190px;
+}
+
+.photos-grid .img-big{
+  max-width: 390px;
+  border-radius: 11px;
+}
+
+.clow-fish{
+  position: absolute;
+  z-index: -1;
+  width: 190px;
+  margin-top: 20vh;
+}
