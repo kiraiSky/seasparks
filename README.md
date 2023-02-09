@@ -15,6 +15,10 @@ João Cunha
 
 ## Version History
 
+- 0.2
+
+  - Responsive, now in mobile and tablet version.
+
 - 0.1
   - Initial phase, just HTML and CSS in desktop version.
 
