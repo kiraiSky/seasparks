@@ -413,7 +413,7 @@ strong{
   padding: 20px 0;
   gap: 20px;
   color: var(--color-text-blue);
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: "Lato0" ,sans-serif;
   font-weight: 700;
   cursor: pointer;
@@ -437,4 +437,64 @@ strong{
   color: #000;
 
   display: none;
+}
+
+/* footer */
+
+.divider-blue{
+  height: 90px;
+  width: 100vw;
+  background-color: var(--color-text-blue);
+}
+
+
+.footer-container{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Lato", sans-serif;
+  padding: 90px 0;
+  position: relative;
+}
+
+.footer-container > img{
+  height: 100px;
+  align-self: center;
+}
+
+.footer-container h2{
+  color: #00A3FF;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.footer-container p{
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-container a{
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.footer-container .contact a {
+  display: inline-block;
+  color: #fff;
+  font-size: 36px;
+  margin: 20px 20px 0 0;
+}
+
+
+.row-divider{
+  background-color: #484848;
+  width: 1000px;
+  height: 1px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
