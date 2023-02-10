@@ -438,7 +438,12 @@ strong{
 }
 .faq-question img{
   max-width: 24px;
-  filter: invert(19%) sepia(91%) saturate(2751%) hue-rotate(223deg) brightness(89%) contrast(114%)
+  filter: invert(19%) sepia(91%) saturate(2751%) hue-rotate(223deg) brightness(89%) contrast(114%);
+  display: none;
+}
+
+.faq-question img.active{
+  display: block;
 }
 
 .faq-anwser{
@@ -450,9 +455,11 @@ strong{
   font-family: "Lato";
   font-weight: 300;
   color: #000;
-
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 }
+
 
 /* footer */
 
