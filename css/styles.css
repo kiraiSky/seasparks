@@ -136,7 +136,6 @@ strong{
   text-align: center;
   border: 3px solid;
   display: inline-block;  
-  border-radius: 5px;
   background: transparent;
   color: var(--color-text-white);
   font-family: 'Lato';
@@ -145,6 +144,11 @@ strong{
   border-image-slice: 1;
   border-image-source: linear-gradient(180deg, #fff, #093cd7);
   margin: 0 auto;
+  transition: .3s;
+}
+
+.btn-call-to-action:hover{
+  transform: scale(1.1);
 }
 
 .char-blue{
@@ -279,6 +283,11 @@ strong{
   font-family: 'Lato Black', sans-serif;
   font-size: 1rem;
   border-radius: 16px;
+  transition: .3s;
+}
+
+.callToAction-Associate a:hover{
+  opacity: 0.8;
 }
 
 .card:nth-of-type(2), .card:nth-of-type(4){
@@ -336,6 +345,12 @@ strong{
   font-size: 1rem;
   border-radius: 16px;
   position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cases-container a:hover{
+  opacity: 0.8;
 }
 
 .cases-container a > i{
@@ -478,14 +493,19 @@ strong{
 .footer-container a{
   display: block;
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  padding: 10px 5px;
+  transition: .3s;
+}
+
+.footer-container a:hover{
+  opacity: 0.8;
 }
 
 .footer-container .contact a {
   display: inline-block;
   color: #fff;
   font-size: 36px;
-  margin: 20px 20px 0 0;
+  padding: 20px 20px 20px 0px;
 }
 
 
