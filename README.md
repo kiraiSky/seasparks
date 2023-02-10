@@ -15,6 +15,14 @@ João Cunha
 
 ## Version History
 
+- 0.4
+
+  - Accordion with JavaScript, toggleAnwser function for accordion F.A.Q.
+
+- 0.3
+
+  - User Interactions, hovers and anchor elements animations.
+
 - 0.2
 
   - Responsive, now in mobile and tablet version.
@@ -24,7 +32,7 @@ João Cunha
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
+Inspiration, svg icons, etc.
 
 - [behance](https://www.behance.net/gallery/154296881/Site-Institucional-Agencia-Mako?tracking_source=project_owner_other_projects)
 - [phosphoricons](https://phosphoricons.com/)
