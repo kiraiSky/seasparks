@@ -106,6 +106,8 @@ pre {
 /* Geral */
 body{
   background: #121212;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 strong{
@@ -273,6 +275,7 @@ strong{
 
 .callToAction-Associate h1{
   max-width: 401px;
+  text-align: start;
 }
 
 .callToAction-Associate a{
@@ -284,6 +287,7 @@ strong{
   font-size: 1rem;
   border-radius: 16px;
   transition: .3s;
+  cursor: pointer;
 }
 
 .callToAction-Associate a:hover{
@@ -526,6 +530,136 @@ strong{
   transform: translateX(-50%);
 }
 
+
+/* Modal */
+
+.modal{
+  position: fixed;
+  z-index: 999;
+  width: 500px;
+  /* height: calc(max-height); */
+  padding: 50px;
+  box-shadow: 0px 0px 20px 10px #0D0D0D;
+  background-color: #121212;
+  border-radius: 20px;    
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-text-white);
+  display: none;
+}
+
+.modal-on{
+  display: block;
+}
+
+.modal p, h1{
+  text-align: center;
+}
+
+.modal p{
+  opacity: 0.8;
+}
+
+.modal h1{
+  padding: 10px 0;
+}
+
+.modal-form{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas: 
+    "email email btn"
+    "terms terms terms";
+}
+
+.modal-form .email-input{
+  background-color: #D8E7EC;
+  padding: 20px;
+  grid-area: email;
+  color: #121212;
+}
+
+.modal-form .email-input::placeholder{
+  color: #B2B9C3;
+}
+
+.modal-form .submit-btn{
+  grid-area: btn;
+  background-color: #093CD7;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.modal-form .submit-btn:hover{
+  scale: 1.1;
+}
+
+.check-container{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 35px;
+  grid-area: terms;
+  padding-top: 2px;
+
+  margin: 20px auto;
+}
+
+.check-container input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check-container .checkmark{
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #D8E7EC;
+  top: 0px;
+  left: 0;
+}
+
+.check-container:hover input ~ .checkmark {
+  opacity: .6;
+}
+
+.check-container input:checked ~ .checkmark {
+  background-color: #093CD7;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 /* Responsive */
 
 @media (max-width: 1300px) {
@@ -585,8 +719,9 @@ strong{
     grid-template-columns: 1fr;
     margin-bottom: 15vh;
   }
-  .callToAction-Associate{
+  .callToAction-Associate, .callToAction-Associate h1{
     grid-column: 1/2;
+    text-align: center;
   }
 
   .card:nth-of-type(2){
