@@ -6,10 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
   <script src="https://unpkg.com/phosphor-icons"></script>
-  <script src="./js/script.js" defer></script>
+  <script src="./js/scripts.js" type="module" defer></script>
   <title>SeaSparks</title>
 </head>
-<body>
+<body class="body">
+
+  <div class="modal">
+    <p>Inscreva-se em nossa</p>
+    <h1 class="title">Newsletter <span class="char-blue">!</span></h1>
+    <p>Você será atualizado com as notícias mais recentes sobre como ajudar a limpar o oceano</p>
+
+    <form class="modal-form">
+      <input type="email" placeholder="E-mail" class="email-input">
+      <label for="terms" class="check-container">Eu aceito os Termos e condições.
+      <input type="checkbox" name="terms" id="terms" class="checkbox">
+      <span class="checkmark"></span>
+      </label>
+      <button type="submit" class="submit-btn">Assinar</button>
+    </form>
+  </div>
 
   <div class="bg-sea">
     <header class="inicio" id="inicio">
@@ -44,7 +59,7 @@
     <div class="callToAction-Associate">
       <h1 class="title">é assim que vamos nos ajudar <span class="char-blue">!</span></h1>
 
-      <a href="#inicio" class="btn-blue" id="abrir-modal">Quero participar</a>
+      <a class="btn-blue" id="abrir-modal">Quero participar</a>
     </div>
 
     <div class="card">
