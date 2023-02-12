@@ -15,6 +15,10 @@ João Cunha
 
 ## Version History
 
+- 0.5
+
+  - Day & Night mode, day/night function for backgrounds and text color changes.
+
 - 0.4
 
   - Accordion with JavaScript, toggleAnwser function for accordion F.A.Q.
