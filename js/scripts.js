@@ -1,5 +1,7 @@
 import initAccordion from "./modules/accordion.js";
-import initiModal from "./modules/modal.js";
+import initModal from "./modules/modal.js";
+import dayNight from "./modules/dayNight.js";
 
 initAccordion();
-initiModal();
+initModal();
+dayNight();
